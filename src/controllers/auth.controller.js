@@ -68,7 +68,7 @@ authCTRL.login = async (req, res) => {
 
 }
 
-authCTRL.profile = verifyToken, async (req, res) => {
+authCTRL.profile = async (req, res) => {
    
    const user = await User.findById(req.userId, {password:0});
 
